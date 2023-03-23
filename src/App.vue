@@ -1,7 +1,4 @@
-<script setup lang="ts">
-  import { ref } from 'vue';
-
-  const counter = ref(0);
+<script lang="ts" src="./App.ts">
 
   // Sin especificar el setup.
   /* import { defineComponent, ref } from 'vue';
