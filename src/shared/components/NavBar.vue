@@ -1,11 +1,25 @@
 <script setup lang="ts">
 
+    /* const props = defineProps({
+        title: {
+            type: string,
+            required: true
+        }
+    }); */
+    // const props = defineProps<{ title?: string }>();
+
+    interface Props {
+        title: string
+    }
+
+    const props = defineProps<Props>();
+
 </script>
 
 <template>
     <nav>
         <img src="@/assets/logo.svg" alt="Vue logo" height="25" width="25">
-        <span>Algo</span>
+        <span>{{ props.title || 'No title' }}</span>
 
         <RouterLink to="/" >Inicio</RouterLink>
         <RouterLink to="/about" >Acerca de</RouterLink>

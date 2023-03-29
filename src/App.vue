@@ -1,12 +1,12 @@
 <script setup lang="ts">
-  import { RouterView } from 'vue-router';
-  import NavBar from '@/shared/components/NavBar.vue';
+import { RouterView } from "vue-router";
+import NavBar from "@/shared/components/NavBar.vue";
 </script>
 
 <template>
   <div class="wrapper">
     <header>
-      <NavBar />
+      <NavBar title="Breaking Bad" />
     </header>
     <main>
       <RouterView />
@@ -15,8 +15,8 @@
 </template>
 
 <style scoped>
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 </style>
